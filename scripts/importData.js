@@ -1,8 +1,8 @@
-var fs 			= require('fs');
-var path 		= require('path');
-var mongoose 	= require('mongoose');
-var config 		= require('../config/config.js')['db'];
-var Fee 		= require('../lib/models/Fee.js')(mongoose);
+var fs = require('fs');
+var path = require('path');
+var mongoose = require('mongoose');
+var config = require('../config/config.js')['db'];
+var Fee = require('../lib/models/Fee.js')(mongoose);
 
 // City Fees
 var loc;
@@ -27,6 +27,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', updateDatabase);
 
 // Insert fees
+
 function updateDatabase() {
 	Fee.create(cityfees, function(err) {
 		if (err) {
@@ -38,4 +39,3 @@ function updateDatabase() {
 		mongoose.disconnect();
 	});
 }
-
