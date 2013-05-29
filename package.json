@@ -1,0 +1,18 @@
+{
+  "name": "cityfees-api",
+  "version": "0.1.0",
+  "description": "An API for the city fees data",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishihahs/cityfees-api.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rishihahs/cityfees-api/issues"
+  }
+}
