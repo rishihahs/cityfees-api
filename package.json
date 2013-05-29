@@ -4,13 +4,15 @@
   "description": "An API for the city fees data",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "mongoose": ">= 3.6.11"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/rishihahs/cityfees-api.git"
   },
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rishihahs/cityfees-api/issues"
