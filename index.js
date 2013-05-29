@@ -8,6 +8,7 @@ var Fee = require('./lib/models/Fee')(mongoose);
 var app = express();
 
 app.configure(function() {
+	app.use(express.compress());
 	mongoose.connect('mongodb://' + config['db']['auth'] + config['db']['host'] + config['db']['port'] + '/' + config['db']['database'], function(err) {
 		if (err) {
 			throw err;
