@@ -11,6 +11,17 @@ Retrieve fee information
 `/api/get/name/{name to get}`
 Demo: [/api/get/name/Fire%20Alarm%20Permit](http://cityfee.herokuapp.com/api/get/name/Fire%20Alarm%20Permit)
 
+### Fulltext Search
+Searches the name and description fields.
+
+**Basic:**
+`/api/get/search/{query}`
+Demo: [/api/get/search/charts](http://cityfee.herokuapp.com/api/get/search/charts)
+
+**Filter by department:**
+`/api/get/search/{query}?ResponsibleDepartment[]=...&ResponsibleDepartment[]=...`
+Demo: [/api/get/search/street?ResponsibleDepartment[]=Mayor%20Office&ResponsibleDepartment[]=Finance](http://cityfee.herokuapp.com/api/get/search/street?ResponsibleDepartment[]=Mayor%20Office&ResponsibleDepartment[]=Finance)
+
 ### All
 `/api/get/all`
 Demo: [/api/get/all](http://cityfee.herokuapp.com/api/get/all)
