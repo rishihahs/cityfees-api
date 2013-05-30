@@ -18,3 +18,7 @@ Demo: [/api/get/all](http://cityfee.herokuapp.com/api/get/all)
 Set Info
 ------
 TBI
+
+Notes
+------
+The raw data (cityfees.json) can be imported into the MongoDB database with `scripts/importData.js`
