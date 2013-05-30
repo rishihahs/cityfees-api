@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "express": "~3.2.5",
-    "mongoose": ">= 3.6.11"
+    "mongoose": ">= 3.6.11",
+    "mongoose-text-search": ">= 0.0.2"
   },
   "repository": {
     "type": "git",
