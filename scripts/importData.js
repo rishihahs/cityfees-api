@@ -20,7 +20,7 @@ if (!loc) {
 var cityfees = JSON.parse(fs.readFileSync(path.normalize(loc), 'utf8'));
 
 // DB Operations
-mongoose.connect('mongodb://' + config['auth'] + config['host'] + config['port'] + '/' + config['database']);
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://' + config['auth'] + config['host'] + config['port'] + '/' + config['database']);
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
