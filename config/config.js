@@ -11,3 +11,5 @@ module.exports = {
 		'database': 'cityfees'
 	}
 }
+
+module.exports['db']['uri'] = process.env.MONGOLAB_URI || 'mongodb://' + module.exports['db']['auth'] + module.exports['db']['host'] + module.exports['db']['port'] + '/' + module.exports['db']['database'];

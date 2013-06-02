@@ -10,7 +10,7 @@ var app = express();
 app.configure(function() {
 	app.set('json spaces', 0);
 	app.use(express.compress());
-	mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://' + config['db']['auth'] + config['db']['host'] + config['db']['port'] + '/' + config['db']['database'], function(err) {
+	mongoose.connect(config['db']['uri'], function(err) {
 		if (err) {
 			throw err;
 		}
