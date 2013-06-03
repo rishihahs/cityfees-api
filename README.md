@@ -26,6 +26,10 @@ Demo: [/api/get/search/street?ResponsibleDepartment[]=Mayor%20Office&Responsible
 `/api/get/all`
 Demo: [/api/get/all](http://cityfee.herokuapp.com/api/get/all)
 
+**Better performance (recommended)**
+JSONP is supported; send a callback along with a hash of your current fees data. All of the fees will be queried and returned only if the sent hash does not match (which means outdated or corrupt data). The callback will be called with no parameters if the hash matches.
+`/api/get/all?hash={md5 hash}&callback={callback}`
+
 Set Info
 ------
 TBI
