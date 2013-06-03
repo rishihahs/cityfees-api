@@ -9,6 +9,7 @@ var app = express();
 
 app.configure(function() {
 	app.set('json spaces', 0);
+	app.enable("jsonp callback");
 	app.use(express.compress());
 	mongoose.connect(config['db']['uri'], function(err) {
 		if (err) {
